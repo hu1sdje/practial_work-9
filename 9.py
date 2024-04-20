@@ -1,6 +1,6 @@
 n = int(input())
 counter = 0
-def domino(n):
-    return n * (n + 1) * (n + 2) // 2
-
-print(domino(n))
+for i in range(n + 1):
+    for j in range(i, n + 1):
+        counter += i + j
+print(counter)
